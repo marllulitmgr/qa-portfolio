@@ -1,0 +1,5 @@
+<section class="banner">
+   <img src="assets/banner/banner.png" alt="QA Tester Portfolio" width="1920">
+</section>
+
+

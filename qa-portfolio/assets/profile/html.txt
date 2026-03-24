@@ -1,0 +1,3 @@
+<section class="profile">
+<img src="assets/profile/foto-perfil.png" alt="Foto de perfil" width="250">
+</section>

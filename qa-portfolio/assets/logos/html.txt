@@ -1,0 +1,4 @@
+<section class="logos">
+<img src="assets/logos/GitHub.png" alt="Tester" width="40">
+<img src="assets/logos/linkedin.png" alt="Linkedin" width="40">
+</section>
