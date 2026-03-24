@@ -1,10 +1,10 @@
-// 1. Definición de datos (Primero definimos la lista)
+// 1. Definición de la data de tus proyectos
 const projectData = [
   {
     "name": "Casos de Prueba en Gherkin",
     "path": "docs/Casos de Prueba en Gherkin/Caso de Prueba en Gherkin.pdf",
     "type": "pdf",
-    "desc": "Escenarios de prueba detallados con sintaxis BDD para procesos bancarios."
+    "desc": "Escenarios detallados con sintaxis BDD para procesos bancarios."
   },
   {
     "name": "Jira - Gestión de Transferencia",
@@ -19,26 +19,14 @@ const projectData = [
     "desc": "Estrategia integral de pruebas para plataforma de banca en línea."
   },
   {
-    "name": "Reporte de Bugs",
-    "path": "docs/Reporte de Bugs",
-    "type": "folder",
-    "desc": "Documentación técnica de hallazgos y seguimiento de errores."
-  },
-  {
     "name": "MySQL - Consultas Avanzadas",
     "path": "MySql/Advanced",
     "type": "folder",
     "desc": "Scripts SQL para validación de datos complejos y Joins."
-  },
-  {
-    "name": "MySQL - Relaciones de Tablas",
-    "path": "MySql/Relaciones_de_Tablas",
-    "type": "folder",
-    "desc": "Diseño de base de datos y diagramas entidad-relación."
   }
 ];
 
-// 2. Lógica para generar las tarjetas (Después de definir los datos)
+// 2. Lógica para crear las tarjetas en el HTML
 const container = document.getElementById("projects-container");
 
 if (container) {
@@ -54,9 +42,6 @@ if (container) {
         ${project.type === "pdf" ? "Ver PDF" : "Explorar Carpeta"}
       </a>
     `;
-
     container.appendChild(card);
   });
-} else {
-  console.error("No se encontró el contenedor 'projects-container'");
 }
