@@ -1,44 +1,44 @@
-const container = document.getElementById("projects-container");
-
-projectData.forEach(project => {
-
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  card.innerHTML = `
-    <h3>${project.name}</h3>
-    <p>${project.desc}</p>
-    <a href="${project.path}" target="_blank">
-      ${project.type === "pdf" ? "📄 Ver documento" : "📁 Abrir carpeta"}
-    </a>
-  `;
-
-  container.appendChild(card);
-});
-
-// 1. Definimos la información de tus carpetas y archivos
+// 1. Definición de datos (Primero definimos la lista)
 const projectData = [
   {
     "name": "Casos de Prueba en Gherkin",
     "path": "docs/Casos de Prueba en Gherkin/Caso de Prueba en Gherkin.pdf",
     "type": "pdf",
-    "desc": "Escenarios de prueba detallados con sintaxis BDD."
+    "desc": "Escenarios de prueba detallados con sintaxis BDD para procesos bancarios."
   },
   {
     "name": "Jira - Gestión de Transferencia",
     "path": "docs/Jira/Plan de Prueba para Jira-y-Reportes de Bug/Modulo-Gestión de Transferencia",
     "type": "folder",
-    "desc": "Documentación de pruebas y gestión de bugs en Jira."
+    "desc": "Plan de pruebas y reportes de defectos documentados en Jira."
+  },
+  {
+    "name": "Home Banking Web Application",
+    "path": "docs/PLan de Prueba - Home Banking Web Application",
+    "type": "folder",
+    "desc": "Estrategia integral de pruebas para plataforma de banca en línea."
+  },
+  {
+    "name": "Reporte de Bugs",
+    "path": "docs/Reporte de Bugs",
+    "type": "folder",
+    "desc": "Documentación técnica de hallazgos y seguimiento de errores."
   },
   {
     "name": "MySQL - Consultas Avanzadas",
     "path": "MySql/Advanced",
     "type": "folder",
-    "desc": "Scripts de SQL con Joins y validación de datos."
+    "desc": "Scripts SQL para validación de datos complejos y Joins."
+  },
+  {
+    "name": "MySQL - Relaciones de Tablas",
+    "path": "MySql/Relaciones_de_Tablas",
+    "type": "folder",
+    "desc": "Diseño de base de datos y diagramas entidad-relación."
   }
 ];
 
-// 2. Lógica para crear las tarjetas en la página
+// 2. Lógica para generar las tarjetas (Después de definir los datos)
 const container = document.getElementById("projects-container");
 
 if (container) {
@@ -47,12 +47,16 @@ if (container) {
     card.classList.add("card");
 
     card.innerHTML = `
+      <div class="card-icon">${project.type === "pdf" ? "📄" : "📂"}</div>
       <h3>${project.name}</h3>
       <p>${project.desc}</p>
-      <a href="${project.path}" target="_blank">
-        ${project.type === "pdf" ? "📄 Ver documento" : "📁 Abrir carpeta"}
+      <a href="${project.path}" target="_blank" class="btn-link">
+        ${project.type === "pdf" ? "Ver PDF" : "Explorar Carpeta"}
       </a>
     `;
+
     container.appendChild(card);
   });
+} else {
+  console.error("No se encontró el contenedor 'projects-container'");
 }
