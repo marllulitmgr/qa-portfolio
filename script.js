@@ -18,23 +18,25 @@ const projectData = [
     desc: "Informe de gestión y trazabilidad de bugs documentados en Jira."
   },
   {
-    name: "Repositorio SQL",
-    path: "MySql/",
+    name: "Scripts SQL Avanzados",
+    path: "https://github.com/marllulitmgr/qa-portfolio/tree/main/MySql",
     type: "folder",
-    desc: "Colección de scripts SQL: Joins, Triggers y Consultas Avanzadas."
+    desc: "Repositorio de consultas SQL: Joins, Triggers y Procedimientos."
   }
 ];
 
 const container = document.getElementById("projects-container");
 
-projectData.forEach(project => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-    <div class="card-icon">${project.type === "pdf" ? "📄" : "📁"}</div>
-    <h3>${project.name}</h3>
-    <p>${project.desc}</p>
-    <a href="${project.path}" target="_blank" class="btn">Ver Proyecto</a>
-  `;
-  container.appendChild(card);
-});
+if (container) {
+  projectData.forEach(project => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="card-icon">${project.type === "pdf" ? "📄" : "📁"}</div>
+      <h3>${project.name}</h3>
+      <p>${project.desc}</p>
+      <a href="${project.path}" target="_blank" class="btn">Ver Proyecto</a>
+    `;
+    container.appendChild(card);
+  });
+}

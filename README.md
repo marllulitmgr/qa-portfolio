@@ -1,17 +1,17 @@
 # QA Portfolio - Marllulit González 🚀
 
-Analista QA con más de **9 años de experiencia** garantizando la calidad en sistemas críticos y software empresarial. Experta en el ciclo de vida de pruebas (STLC) y validación funcional en el sector bancario.
+**Analista QA Senior** con más de 9 años de experiencia asegurando la calidad en sistemas críticos y software empresarial. Experta en el ciclo de vida de pruebas (STLC), diseño de RTM y validación funcional con enfoque en experiencia de usuario.
 
 ## 🛠 Skills Técnicas
-- **Gestión & Ágil:** Jira (Expertise en Sprints, Backlog, Kanban, Trazabilidad).
-- **Pruebas:** Manual Testing, Diseño de Matrices de Trazabilidad (RTM), Gherkin BDD.
-- [cite_start]**Datos:** SQL Avanzado (Queries, Joins, Triggers, Stored Procedures)[cite: 14, 15, 17].
-- **Ubicación:** Caracas, Venezuela.
+- **Gestión:** Jira Software (Sprints, Backlog, Kanban, Gestión de Defectos).
+- **Pruebas:** Manual Testing, Gherkin BDD, Matrices de Trazabilidad.
+- **Bases de Datos:** SQL Avanzado (Queries, Joins, Triggers, Stored Procedures).
+- **Documentación:** Planes de Prueba, Reportes de Bugs, Casos de Prueba.
 
-## 📁 Estructura del Repositorio
-- [cite_start]`/docs`: Planes de prueba, casos Gherkin y reportes de bugs[cite: 1, 3, 10].
-- [cite_start]`/MySql`: Scripts de bases de datos y ejercicios avanzados[cite: 10].
-- [cite_start]`/assets`: Recursos visuales y evidencias del portafolio[cite: 289].
+## 📁 Estructura del Proyecto
+- `/docs`: Documentación técnica (PDFs de Planes y Casos).
+- `/MySql`: Scripts y ejercicios de base de datos.
+- `/assets`: Recursos visuales y evidencias del portafolio.
 
 ---
-[LinkedIn](https://www.linkedin.com/in/marllulit-qa-tester) | [Email](mailto:marllulit.gonzalez@gmail.com)
+📫 **Contacto:** [LinkedIn](https://www.linkedin.com/in/marllulit-qa-tester) | [Email](mailto:marllulit.gonzalez@gmail.com)
