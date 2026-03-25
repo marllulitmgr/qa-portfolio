@@ -1,138 +1,71 @@
-/* Configuración General */
+:root {
+  --primary: #1e293b;
+  --accent: #38bdf8;
+  --text: #f8fafc;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #0f172a;
-  color: white;
-  line-height: 1.6;
+  background-color: #0f172a;
+  color: var(--text);
 }
 
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #6366f1, #9333ea);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-/* Sección Sobre Mí */
-.about {
+.hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  gap: 30px;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
-.about img {
-  border-radius: 50%;
-  border: 4px solid #38bdf8;
-  object-fit: cover;
-  width: 180px;
-  height: 180px;
-}
+.social-links img { width: 35px; margin: 10px; transition: 0.3s; }
+.social-links img:hover { transform: scale(1.1); }
 
-.about h2 {
-  color: #38bdf8;
-  margin-top: 0;
-}
+.about { padding: 60px 0; background: #1e293b; }
+.about .container { display: flex; align-items: center; gap: 40px; }
+.profile-img { width: 220px; border-radius: 50%; border: 4px solid var(--accent); }
 
-/* Grilla de Proyectos */
-.projects {
-  padding: 40px 20px;
-  background: #111827;
-}
+.section-title { text-align: center; margin-bottom: 40px; color: var(--accent); }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-/* Tarjetas de Proyecto (Importante para que se vea lo de QA) */
 .card {
-  background: #1e293b;
+  background: #0f172a;
   padding: 25px;
   border-radius: 15px;
+  border: 1px solid #334155;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #334155;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  transition: 0.3s;
 }
+.card:hover { border-color: var(--accent); transform: translateY(-5px); }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-  border-color: #38bdf8;
-}
-
-.card-icon {
-  font-size: 45px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin: 10px 0;
-  color: #f8fafc;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #94a3b8;
-  margin-bottom: 20px;
-}
-
-/* Botones de enlace a tus archivos */
-.btn-link {
+.btn {
   display: inline-block;
+  margin-top: 15px;
   padding: 10px 20px;
-  background-color: #38bdf8;
-  color: #0f172a !important;
-  text-decoration: none !important;
-  border-radius: 8px;
+  background: var(--accent);
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.btn-link:hover {
-  background-color: #7dd3fc;
-}
-
-/* Evidencia de Testing (Screenshots) */
 .evidence-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
+  margin-top: 40px;
 }
+.evidence-item img { width: 100%; border-radius: 8px; border: 1px solid #334155; }
+.evidence-item p { text-align: center; margin-top: 10px; font-size: 0.9em; }
 
-.evidence-grid img {
-  border-radius: 8px;
-  border: 1px solid #334155;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-  header h1 { font-size: 1.8rem; }
-  .about { text-align: center; }
-}
+footer { text-align: center; padding: 40px; background: #020617; }

@@ -1,3 +1,0 @@
-<section class="gifs">
-<img src="assets/gifs/Osito bubu.gif" alt="Osito bubu" width="120">
-</section>

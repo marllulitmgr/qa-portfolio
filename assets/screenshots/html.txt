@@ -1,5 +1,0 @@
-<section class="screenshots">
-<img src="assets/screenshots/testing-process.png" alt="Proceso de Caso de Prueba" width="600">
-<img src="assets/screenshots/bug-tracking.png" alt="Reporte de Bug" width="600">
-<img src="assets/screenshots/gherkin-feature.png" alt="Caso de Prueba en Gherkin" width="600">
-</section>

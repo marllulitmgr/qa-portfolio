@@ -8,33 +8,60 @@
 </head>
 <body>
 
-<header>
-  <h1>QA Tester Portfolio</h1>
-  <p>Manual Testing | SQL | API | BDD</p>
+<header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/banner/banner.png');">
+  <div class="header-content">
+    <h1>Marllulit González</h1>
+    <p>QA Tester Manual | Especialista en Gestión de Calidad</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/marllulit-qa-tester" target="_blank"><img src="assets/logos/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/marllulitmgr" target="_blank"><img src="assets/logos/github.png" alt="GitHub"></a>
+    </div>
+  </div>
 </header>
 
 <section class="about">
-  <img src="assets/profile/foto.png" alt="Foto perfil" width="200" onerror="this.src='https://via.placeholder.com/200?text=QA+Profile'">
-  <div>
-    <h2>Sobre mí</h2>
-    <p>Soy QA Tester con más de 10 años de experiencia especializada en pruebas manuales, documentación técnica, SQL y validación de sistemas bancarios.</p>
-  </div>
-</section>
-
-<section class="projects">
-  <h2 style="text-align: center; margin-bottom: 20px;">Mis Proyectos y Documentación</h2>
-  <div class="grid" id="projects-container">
+  <div class="container">
+    <img src="assets/profile/foto-perfil.png" alt="Marllulit González" class="profile-img">
+    <div class="bio">
+      <h2>Sobre mí</h2>
+      <p>Analista QA con más de 9 años de experiencia garantizando la calidad en sistemas críticos y software empresarial. Experta en el ciclo de vida de pruebas (STLC), diseño de matrices de trazabilidad (RTM) y validación funcional.</p>
+      <p>📍 Caracas, Venezuela | ✉️ marllulit.gonzalez@gmail.com</p>
     </div>
-</section>
-
-<section class="screenshots">
-  <h2>Evidencia de Testing</h2>
-  <div class="evidence-grid">
-    <img src="assets/screenshots/testing-process.png" alt="Proceso de prueba" onerror="this.style.display='none'">
-    <img src="assets/screenshots/bug-tracking.png" alt="Seguimiento de bugs" onerror="this.style.display='none'">
-    <img src="assets/screenshots/gherkin-feature.png" alt="Gherkin Feature" onerror="this.style.display='none'">
   </div>
 </section>
+
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">Proyectos Principales</h2>
+    <div class="grid" id="projects-container">
+      </div>
+  </div>
+</section>
+
+<section class="evidence-gallery">
+  <div class="container">
+    <h2 class="section-title">Evidencias Técnicas</h2>
+    <div class="evidence-grid">
+      <div class="evidence-item">
+        <img src="assets/screenshots/gherkin-feature.png" alt="Gherkin Evidence">
+        <p>Documentación Gherkin BDD</p>
+      </div>
+      <div class="evidence-item">
+        <img src="assets/jira/tablero.png" alt="Jira Evidence">
+        <p>Gestión en Jira Software</p>
+      </div>
+      <div class="evidence-item">
+        <img src="assets/sql/query.png" alt="SQL Evidence">
+        <p>Consultas y Pruebas SQL</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Marllulit González - QA Portfolio</p>
+  <img src="assets/gifs/Osito%20bubu.gif" alt="QA mascot" width="50">
+</footer>
 
 <script src="script.js"></script>
 </body>

@@ -1,4 +1,0 @@
-<section class="jira">
-<img src="assets/jira/spring completado.png" alt="Spring completó" width="600">
-<img src="assets/jira/tablero.png" alt="Tablero de Jira" width="600">
-</section>

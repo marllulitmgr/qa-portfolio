@@ -1,6 +1,0 @@
-<section class="qa">
-<img src="assets/qa/testing-process.png" alt="Tester" width="300">
-</section>
-
-
-

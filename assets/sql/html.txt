@@ -1,4 +1,0 @@
-<section class="sql">
-<img src="assets/sql/sql.jpg" alt="Imagen de SQL" width="300">
-<img src="assets/sql/query.png" alt="Ejemplo de Query" width="600">
-</section>
